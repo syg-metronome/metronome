@@ -1,0 +1,1 @@
+psexec \\target -s cmd /c "sc config WinRM start= auto && sc start WinRM && winrm quickconfig -quiet && netsh advfirewall firewall set rule group=\"Windows Remote Management\" new enable=yes"
